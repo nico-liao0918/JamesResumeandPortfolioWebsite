@@ -1,0 +1,11 @@
+<section class="none">
+    <h4>No Current Projects</h4>
+    <p>Not currently doing any projects</p>
+    <p>You may ask me for any front-end development serivces or any other services.</p>
+    <p>You can view my services on 
+        <a href="" target="_blank" class="btn">This Website</a>
+    </p>
+    <p>You can also view my services 
+        <a href="" target="_blank" class="btn">Here</a>
+    </p>
+</section>
