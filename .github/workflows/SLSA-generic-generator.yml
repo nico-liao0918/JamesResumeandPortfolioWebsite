@@ -32,9 +32,6 @@ jobs:
       # ========================================================
       #
       # Step 2: Add a step to generate the provenance subjects
-      #         as shown below. Update the sha256 sum arguments
-      #         to include all binaries that you generate
-      #         provenance for.
       #
       # ========================================================
       - name: Generate subject for provenance
@@ -51,7 +48,9 @@ jobs:
           # Generate the subjects (base64 encoded).
           files=$(ls artifact*)
           hashes=$(sha256sum $files | base64 -w0)
-          echo "hashes=$hashes" >> "${GITHUB_OUTPUT}"
+          
+          # Write the output to an environment file
+          echo "digests=$hashes" >> $GITHUB_ENV
         shell: bash
 
   provenance:
