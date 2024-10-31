@@ -1,0 +1,77 @@
+/* contact css */
+
+.home {
+    text-decoration: none;
+    color: black;
+}
+
+.title {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-contact {
+    text-align: center;
+}
+
+.contact h2 {
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-contact1 {
+    text-align: center;
+}
+
+.container-contact2 {
+    text-align: center;
+}
+
+.contact2 h3 {
+    font-size: 40px;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact2 p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.contact2 a {
+    font-size: 20px;
+    margin: 10px;
+    padding: 10px;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #218838;
+}
