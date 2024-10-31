@@ -14,7 +14,13 @@ jobs:
     - uses: actions/checkout@v4
     - name: Build the Jekyll site
       run: |
+        # Create a Docker volume
+        docker volume create jekyll-volume
+        
+        # Run the Jekyll build process
         docker run \
-        -v "${{ github.workspace }}":/srv/jekyll \
+        --rm \
+        --user root \
+        -v jekyll-volume:/srv/jekyll \
         -v "${{ github.workspace }}/_site":/srv/jekyll/_site \
-        jekyll/builder:latest /bin/bash -c "chmod -R 755 /srv/jekyll && jekyll build --future"
+        jekyll/builder:latest /bin/bash -c "mkdir -p /srv/jekyll/.jekyll-cache && jekyll build --future"
