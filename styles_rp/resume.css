@@ -1,0 +1,183 @@
+/* resume.css */
+
+.home {
+    text-decoration: none;
+    color: black;
+}
+
+.container-resume {
+    text-align: center;
+}
+
+.resume h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.resume p {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-summary {
+    text-align: center;
+}
+
+.summary h2 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.summary p {
+    text-align: justify;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-work {
+    text-align: center;
+}
+
+.container1 {
+    display: flex;
+    justify-content: center;
+}
+
+.title {
+    margin: 10px;
+    padding: 10px;
+}
+
+.work1 {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.work1 h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.work1 h4 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.work1 ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.work2 {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.work2 h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.work2 h4 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.work2 ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-skill {
+    text-align: center;
+}
+
+.container2 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.skill1 {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.skill2 {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.skill1 h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.skill1 ul li {
+    text-align: left;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.skill2 h3 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.skill2 ul li {
+    text-align: left;
+    margin: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding: 10px;
+}
+
+.container-certs {
+    text-align: center;
+}
+
+.certs {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.certs h3 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.certs h4 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.certs p {
+    margin: 10px;
+    padding: 10px;
+}
+
+.container-down {
+    text-align: center;
+}
+
+.down {
+    text-align: left;
+    margin: 10px;
+    padding: 10px;
+}
