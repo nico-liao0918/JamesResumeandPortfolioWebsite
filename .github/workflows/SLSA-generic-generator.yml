@@ -31,7 +31,7 @@ jobs:
 
       # ========================================================
       #
-      # Step 2: Add a step to generate the provenance subjects
+      # Step 2: Generate the provenance subjects
       #
       # ========================================================
       - name: Generate subject for provenance
@@ -61,8 +61,8 @@ jobs:
       contents: write # To add assets to a release.
     runs-on: ubuntu-latest
     steps:
-      - name: Use SLSA GitHub Generator
-        uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@v1.4.0
+      - name: Use SLSA GitHub Generator (Replace with the correct action)
+        uses: slsa-framework/slsa-github-generator/.github/workflows/generator_generic_slsa3.yml@latest  # Update this line with a valid action or path
         with:
           base64-subjects: ${{ env.digests }}  # Reference the environment variable
           upload-assets: true # Optional: Upload to a new release
