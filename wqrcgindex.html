@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<!--Html Section-->
+
+<html>
+
+<!--Head Section-->
+
+<head>
+    <title>WFQRCG WEBSITE</title>
+    <link rel="stylesheet" href="genstyle/global.css">
+    <link rel="stylesheet" href="styles_wqcg/wqcgstyles.css">
+    <link rel="stylesheet" href="genstyle/mobile.css">
+    <link rel="icon" href="" type="#-icon">
+    <script type="module" src="#"></script>
+    <script src="#"></script>
+    <script></script>
+</head>
+
+<!--Body Section-->
+
+<body>
+    <!--Header Section-->
+    <header>
+
+        <!--Title Section-->
+        <div class="container-title">
+            <h1 class="title">
+                <p class="home">Generate your QR Code</p>
+            </h1>
+        </div>
+    </header>
+
+    <!--Main Section-->
+    <main>
+
+        <!--QR Code Generator Form Section-->
+        <div>
+            <section class="container-qr">
+                <form id="wifiForm">
+                    <label for="networkName">
+                            Network Name:
+                    </label>
+                    <input type="text" id="networkName" placeholder="Network Name" required>
+
+                    <label for="password">
+                            Password:
+                    </label>
+                    <input type="text" id="password" placeholder="Password" required>
+
+                    <button type="button" id="generateBtn" class="btn">
+                        Generate QR Code
+                    </button>
+                </form>
+            </section>
+
+            <!--Link to Go back Section-->
+            <section class="container-back">
+                <p>
+                    <a 
+                        href="portfolio.html"
+                        target="_blank"
+                        class="btn"
+                    >
+                            Go Back to Portfolio
+                    </a>
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <!--Footer Section-->
+    <footer>
+        <div class="container-foot">
+            <section class="foot">
+                <p>Copyright &copy; 2024 Wifi QR Code Generator. All Rights Reserved.</p>
+            </section>
+        </div>
+    </footer>
+
+    <!--Script Section-->
+    <script 
+        src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
+    </script>
+    <script 
+        src="wqrcgscript.js">
+    </script>
+</body>
+
+</html>
