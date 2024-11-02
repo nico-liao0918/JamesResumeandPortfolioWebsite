@@ -1,0 +1,106 @@
+/* slp css */
+
+.intro {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.container {
+    text-align: center;
+    justify-content: center;
+}
+
+.services {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.services h2 {
+    margin: 5px;
+    padding: 5px;
+    margin-left: 100px;
+}
+
+.services ul li {
+    margin: 10px;
+    padding: 10px;
+    margin-left: 100px;
+}
+
+.benefits {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+}
+
+.benefits h2 {
+    margin: 5px;
+    padding: 5px;
+}
+
+.benefits ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.cta {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cta p {
+    margin: 10px;
+    padding: 5px;
+}
+
+.cta-btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.cta-btn:hover {
+    background-color: #0056b3;
+}
+
+.btn {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #007BFF;
+    color: white;
+    margin: 10px;
+    padding: 10px;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+}
