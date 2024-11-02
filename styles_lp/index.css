@@ -1,0 +1,107 @@
+/* General Styles */
+
+.home {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.container {
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.btn-primary {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    margin: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+}
+
+#about {
+    padding: 60px 0;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#services {
+    background-color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 2.5rem;
+    margin-bottom: 40px;
+}
+
+.service {
+    margin-bottom: 40px;
+}
+
+.service h3 {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
+}
+
+.service p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+#contact {
+    background-color: #007BFF;
+    color: white;
+    padding: 60px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+#contact p {
+    font-size: 1.25rem;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    #about h2,
+    #services h2,
+    #contact h2 {
+        font-size: 2rem;
+    }
+
+    .service h3 {
+        font-size: 1.5rem;
+    }
+}
