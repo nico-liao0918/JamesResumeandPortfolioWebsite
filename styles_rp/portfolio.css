@@ -156,6 +156,42 @@
     padding: 10px;
 }
 
+.new {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.new h4 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.new ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
+.program {
+    width: 600px;
+    text-align: left;
+    display: inline-block;
+    margin: 10px;
+    padding: 10px;
+}
+
+.program h4 {
+    margin: 10px;
+    padding: 10px;
+}
+
+.program ul li {
+    margin: 10px;
+    padding: 10px;
+}
+
 .down {
     text-align: left;
     margin: 10px;
