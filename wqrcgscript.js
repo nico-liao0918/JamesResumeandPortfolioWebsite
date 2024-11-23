@@ -18,7 +18,10 @@ function generateQRCode() {
     }
 
     // WiFi format for QR code
-    const wifiQRData = `WIFI:S:${networkName};T:WPA;P:${password};;`;
+   const wifiQRData = password 
+    ? `WIFI:S:${networkName};T:WPA;P:${password};;`
+    : `WIFI:S:${networkName};;`;
+
 
     // Clear any previous QR codes
     qrCodeContainer.innerHTML = '';
