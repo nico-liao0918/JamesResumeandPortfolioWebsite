@@ -14,6 +14,14 @@
     padding: 5px;
 }
 
+#qrcode {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
 .card-generator {
     border: 1px solid #ddd;
     padding: 20px;
