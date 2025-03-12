@@ -53,3 +53,12 @@
     margin: 10px;
     padding: 10px;
 }
+
+.resume button, button a {
+    display: inline-block;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
