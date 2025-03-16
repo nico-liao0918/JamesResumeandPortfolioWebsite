@@ -1,0 +1,31 @@
+.profile-section {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    margin: 20px auto;
+    max-width: 800px;
+}
+
+.profile-photo img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 20px;
+}
+
+.profile-info {
+    max-width: 600px;
+}
+
+.profile-info h1 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.profile-info .bio {
+    color: #555;
+    line-height: 1.6;
+}

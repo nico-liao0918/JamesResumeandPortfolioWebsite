@@ -1,100 +1,138 @@
-/* global.css */
-
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
 }
 
-.home {
-    text-decoration: none;
-    color: black;
-}
-
-.title {
-    margin: 10px;
-    padding: 10px;
-}
-
-/* Header */
 header {
     text-align: center;
-    font-family: Arial;
+    margin: 10px;
+    padding: 10px;
     background-color: darkgreen;
-    color: black;
-    padding: 20px 0;
+    color: white;
 }
 
 header h1 {
-    margin-bottom: 10px;
+    margin: 5px;
+    padding: 5px;
+    color: white;
 }
 
 header p {
     margin: 12px;
+    color: white;
 }
 
-/* Default Styles for Navigation */
+header a {
+    text-decoration: none;
+    color: white;
+}
+
 nav {
-    background-color: darkgreen;
+    background-color: green;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
+    color: white;
 }
 
 nav ul {
     list-style-type: none;
-    padding: 0;
-    margin: 0;
     display: inline-block;
+    color: white;
 }
 
 nav ul li {
     display: inline;
-    margin-right: 20px;
-}
-
-nav ul li a {
+    margin: 10px;
     color: white;
-    text-decoration: none;
-    padding: 10px 20px;
-    background-color: darkgreen;
-    transition: background-color 0.3s ease;
 }
 
-nav ul li a:hover {
-    background-color: lightgreen;
+main {
+    color: black;
+    margin: 10px;
+    padding: 10px;
 }
 
-/* General Styles for Mobile and Desktop */
+.containers {
+    margin: 15px;
+    padding: 15px;
+    display: block;
+    justify-content: center;
+}
 
-.btn {
+.contents {
+    text-align: left;
     display: inline-block;
-    padding: 10px 20px;
-    background-color: #28a745;
+    margin: 10px;
+    padding: 10px;
+}
+
+main h1, h2 {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+main p {
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+main ul {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+main ul li {
+    margin: 10px;
+}
+
+.button {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    background-color: darkgreen;
     color: white;
     text-decoration: none;
     border-radius: 5px;
-    margin-top: 10px;
 }
 
-.btn:hover {
+.button:hover {
+    background-color: green;
+}
+
+form {
+    margin: 20px auto;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+form input,
+form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    font-size: 16px;
+}
+
+form button {
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
     background-color: #218838;
 }
 
-#nav-links {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-nav ul li {
-    display: inline-block;
-}
-
-/* Footer Styles */
 footer {
     text-align: center;
-    padding: 20px 0;
-    background-color: #333;
+    margin: 10px;
+    padding: 20px;
+    background-color: black;
     color: white;
 }
 

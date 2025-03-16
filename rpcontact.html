@@ -2,7 +2,7 @@
 
 <html>
     <head>
-        <title>JFS WEBSITE</title>
+        <title>JRAP WEBSITE</title>
         <link rel="stylesheet" href="genstyle/global.css">
         <link rel="stylesheet" href="">
     </head>
@@ -21,16 +21,19 @@
                 <nav>
                     <ul>
                         <li>
-                            <a href="jfsindex.html">Home</a>
+                            <a href="rpindex.html">Home</a>
                         </li>
                         <li>
-                            <a href="jfsabout.html">About</a>
+                            <a href="rpabout.html">About</a>
                         </li>
                         <li>
-                            <a href="jfsservice.html">Service</a>
+                            <a href="rpresume.html">Resume</a>
                         </li>
                         <li>
-                            <a href="jfscontact.html">Contact</a>
+                            <a href="rpportfolio.html">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="rpcontact.html">Contact</a>
                         </li>
                     </ul>
                 </nav>
@@ -40,15 +43,18 @@
         <main>
             <section>
                 <div>
-                    <h2>Who We Are</h2>
-                    <p>
-                        James Freelancing Solutions is a professional service provider that offers a range of solutions to help
-                        businesses and individuals succeed online.
-                    </p>
-                    <p>
-                        With expertise in web development, hosting, virtual assistance, and more, we are committed to delivering
-                        top-notch services tailored to your needs.
-                    </p>
+                    <form action="https://formspree.io/f/myzyeedr" method="post">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+
+                        <button type="submit">Submit</button>
+                    </form>
                 </div>
             </section>
         </main>
@@ -56,9 +62,7 @@
         <footer>
             <section>
                 <div>
-                    <p>
-                        Copyright &copy; 2024 James Freelance Solutions. All Rights Reserved.
-                    </p>
+                    <p>Copyright &copy; 2024 James Resume and Portfolio. All Rights Reserved.</p>
                 </div>
             </section>
         </footer>
