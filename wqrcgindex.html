@@ -1,37 +1,24 @@
 <!DOCTYPE html>
 
-<!--Html Section-->
-
 <html>
+    <head>
+        <title>WFQRCG WEBSITE</title>
+        <link rel="stylesheet" href="genstyle/global.css">
+        <link rel="stylesheet" href="styles_wqcg/wqcg.css">
+        <link rel="stylesheet" href="">
+    </head>
 
-<!--Head Section-->
-
-<head>
-    <title>WFQRCG WEBSITE</title>
-    <link rel="stylesheet" href="genstyle/global.css">
-    <link rel="stylesheet" href="styles_wqcg/wqcgstyles.css">
-    <link rel="stylesheet" href="genstyle/mobile.css">
-</head>
-
-<!--Body Section-->
-
-<body>
-    <!--Header Section-->
-    <header>
-
-        <!--Title Section-->
-        <div class="container-title">
-            <h1 class="title">
-                <p class="home"><a href="wqrcgindex.html" class="home">Generate your QR Code</a></p>
+    <body>
+        <header>
+            <h1>
+                <a 
+                    href="wqrcgindex.html">
+                        Generate your QR Code
+                </a>
             </h1>
-        </div>
-    </header>
+        </header>
 
-    <!--Main Section-->
-    <main>
-
-        <!--QR Code Generator Form Section-->
-        <div>
+        <main>
             <section class="container-qr" id="qrcode">
                 <form id="wifiForm">
                     <label for="networkName">
@@ -49,42 +36,38 @@
                     </button>
                 </form>
             </section>
-
             <div>
                 <section id="qrcode"></section>
             </div>
-
-            <!--Link to Go back Section-->
-            <section class="container-back">
-                <p>
-                    <a 
-                        href="portfolio.html"
-                        target="_blank"
-                        class="btn"
-                    >
-                            Go Back to Portfolio
-                    </a>
-                </p>
+            <section>
+                <div>
+                    <p>
+                        <a 
+                            href="portfolio.html"
+                            target="_blank"
+                            class="btn">
+                                Go Back to Portfolio
+                        </a>
+                    </p>
+                </div>
             </section>
-        </div>
-    </main>
+        </main>
 
-    <!--Footer Section-->
-    <footer>
-        <div class="container-foot">
-            <section class="foot">
-                <p>Copyright &copy; 2024 Wifi QR Code Generator. All Rights Reserved.</p>
+        <footer>
+            <section>
+                <div>
+                    <p>
+                        Copyright &copy; 2024 Wifi QR Code Generator. All Rights Reserved.
+                    </p>
+                </div>
             </section>
-        </div>
-    </footer>
+        </footer>
+    </body>
 
-    <!--Script Section-->
     <script 
         src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js">
     </script>
     <script 
-        src="wqrcgscript.js">
+        src="wqrcgs.js">
     </script>
-</body>
-
 </html>
