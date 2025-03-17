@@ -37,12 +37,16 @@ input {
 }
 
 button {
-    padding: 10px 20px;
+    display: block;
+    margin: 10px;
+    padding: 10px;
     border: none;
+    text-decoration: none;
     background-color: #28a745;
     color: white;
     border-radius: 5px;
     cursor: pointer;
+    width: 400px;
 }
 
 button:hover {
@@ -61,18 +65,4 @@ button:hover {
     justify-items: center;
     margin: 10px;
     padding: 5px;
-}
-
-.btn {
-    display: block;
-    text-decoration: none;
-    background-color: #28a745;
-    color: white;
-    margin: 10px;
-    padding: 10px;
-    width: 400px;
-}
-
-.btn:hover {
-    background-color: #218838;
 }
