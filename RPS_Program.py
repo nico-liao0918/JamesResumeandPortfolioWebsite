@@ -39,29 +39,46 @@ while running:
     reacttime = time.time() - starttime
     totaltime += reacttime
 
-    # === Game Logic & Scoring ===
+    # === Game Logic & Scoring & Results Saving ===
     if player == computer:
         print("Tie!")
-    elif (player == "rock" and computer == "scissor") or \
-         (player == "paper" and computer == "rock") or \
-         (player == "scissor" and computer == "paper"):
+        playerscore, computerscore = 0, 0
+        print(f"Your reaction time: {reacttime:.2f}")
+        print(f"Your Score: {playerscore}")
+        print(f"Computer Score: {computerscore}")
+        save_entry(playerscore, computerscore, totaltime, player, computer)
+    elif player == "rock" and computer == "scissor":
         print("Win!")
         playerscore += 1
+        print(f"Your reaction time: {reacttime:.2f}")
+        print(f"Your Score: {playerscore}")
+        print(f"Computer Score: {computerscore}")
+        save_entry(playerscore, computerscore, totaltime, player, computer)
+    elif player == "paper" and computer == "rock":
+        print("Win!")
+        playerscore += 1
+        print(f"Your reaction time: {reacttime:.2f}")
+        print(f"Your Score: {playerscore}")
+        print(f"Computer Score: {computerscore}")
+        save_entry(playerscore, computerscore, totaltime, player, computer)
+    elif player == "scissor" and computer == "paper":
+        print("Win!")
+        playerscore += 1
+        print(f"Your reaction time: {reacttime:.2f}")
+        print(f"Your Score: {playerscore}")
+        print(f"Computer Score: {computerscore}")
+        save_entry(playerscore, computerscore, totaltime, player, computer)
     else:
         print("Loss!")
         computerscore += 1
-
-    # Display scores and reaction time
-    print(f"Your reaction time: {reacttime:.2f}")
-    print(f"Your Score: {playerscore}")
-    print(f"Computer Score: {computerscore}")
-
-    # Save round result
-    save_entry(playerscore, computerscore, totaltime, player, computer)
+        print(f"Your reaction time: {reacttime:.2f}")
+        print(f"Your Score: {playerscore}")
+        print(f"Computer Score: {computerscore}")
+        save_entry(playerscore, computerscore, totaltime, player, computer)
 
     # Ask if the player wants to continue
     playagain = input("Play again? (y/n): ").strip().lower()
-    if playagain != "y":
+    if not playagain == "y":
         running = False
 
 # === End of Game Summary ===
