@@ -1,0 +1,33 @@
+.containters {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+.contents {
+    text-align: center;
+    margin: 10px;
+    padding: 10px;
+}
+
+main h1, h2, h3 {
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+}
+
+main p {
+    text-align: left;
+    margin: 5px;
+    padding: 5px;
+}
+
+main ul {
+    margin: 10px;
+    padding: 10px;
+    display: inline-block;
+}
+
+main ul li {
+    margin: 10px;
+}
