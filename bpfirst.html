@@ -110,6 +110,22 @@
                     </section>
                 </div>
             </article>
+            <section>
+                <div id="disqus_thread"></div>
+                <script>
+                    var disqus_config = function () {
+                        this.page.url = window.location.href;  // Canonical URL
+                        this.page.identifier = window.location.pathname; // Unique identifier
+                    };
+                    (function() {
+                        var d = document, s = d.createElement('script');
+                        s.src = 'https://YOUR-SHORTNAME.disqus.com/embed.js';
+                        s.setAttribute('data-timestamp', +new Date());
+                        (d.head || d.body).appendChild(s);
+                    })();
+                </script>
+                <noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+            </section>
         </main>
     </body>
 
