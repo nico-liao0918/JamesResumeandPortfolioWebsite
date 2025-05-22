@@ -1,0 +1,33 @@
+/* Repo Styles */
+
+.containers {
+    align-items: center;
+    display: inline-block;
+    color: black;
+    margin: 15px;
+    padding: 15px;
+    max-width: 500px;
+    max-height: 500px;
+}
+
+.contents {
+    display: block;
+    margin: 10px;
+    padding: 10px;
+}
+
+section {
+    align-items: center;
+}
+
+section div h3, section div p {
+    margin: 10px;
+    padding: 10px;
+}
+
+section div ul, section div ul li {
+    text-decoration: none;
+    list-style-type: none;
+    padding: 1.5px;
+    margin: 1.5px;
+}
