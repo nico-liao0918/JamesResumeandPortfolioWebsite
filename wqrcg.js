@@ -1,50 +1,70 @@
 // script.js / wqrcgs.js
 
-// Get DOM elements
-const networkNameInput = document.getElementById('networkName');
-const passwordInput = document.getElementById('password');
-const generateBtn = document.getElementById('generateBtn');
-const qrCodeContainer = document.getElementById('qrcode');
+document.addEventListener('DOMContentLoaded', function () {
+    // Get DOM elements
+    const networkNameInput = document.getElementById('networkName');
+    const passwordInput = document.getElementById('password');
+    const generateBtn = document.getElementById('generateBtn');
+    const qrCodeContainer = document.getElementById('qrcode');
+    const downloadBtn = document.getElementById('downloadBtn');
 
-// Function to generate the WiFi QR Code
-function generateQRCode() {
-    const networkName = networkNameInput.value.trim();
-    const password = passwordInput.value.trim();
+    let lastQRCodeCanvas = null; // Save reference to QR canvas for download
 
-    // Ensure network name is provided
-    if (!networkName) {
-        alert("Please enter the Network Name.");
-        return;
+    function generateQRCode() {
+        const networkName = networkNameInput.value.trim();
+        const password = passwordInput.value.trim();
+
+        if (!networkName) {
+            alert("Please enter the Network Name.");
+            return;
+        }
+
+        const wifiQRData = password 
+            ? `WIFI:S:${networkName};T:WPA;P:${password};;`
+            : `WIFI:S:${networkName};;`;
+
+        // Clear previous QR code and message
+        qrCodeContainer.innerHTML = '';
+        lastQRCodeCanvas = null;
+
+        // Generate QR code
+        const qr = new QRCode(qrCodeContainer, {
+            text: wifiQRData,
+            width: 300,
+            height: 300
+        });
+
+        // Delay to ensure QRCode is rendered in DOM
+        setTimeout(() => {
+            const canvas = qrCodeContainer.querySelector('canvas');
+            if (canvas) lastQRCodeCanvas = canvas;
+
+            const successMsg = document.createElement('p');
+            successMsg.textContent = "QR Code generated successfully!";
+            successMsg.style.color = "green";
+            successMsg.style.marginTop = "10px";
+            successMsg.style.fontWeight = "bold";
+            qrCodeContainer.appendChild(successMsg);
+        }, 200);
+
+        // Reset form
+        networkNameInput.value = '';
+        passwordInput.value = '';
     }
 
-    // Construct QR code string in WiFi format
-    const wifiQRData = password 
-        ? `WIFI:S:${networkName};T:WPA;P:${password};;`
-        : `WIFI:S:${networkName};;`;
+    function downloadQRCodeAsJPEG() {
+        if (!lastQRCodeCanvas) {
+            alert("Please generate a QR Code first.");
+            return;
+        }
 
-    // Clear previous QR code and messages
-    qrCodeContainer.innerHTML = '';
+        const dataURL = lastQRCodeCanvas.toDataURL("image/jpeg");
+        const link = document.createElement('a');
+        link.href = dataURL;
+        link.download = "wifi-qr-code.jpg";
+        link.click();
+    }
 
-    // Create new QR code
-    new QRCode(qrCodeContainer, {
-        text: wifiQRData,
-        width: 300,
-        height: 300
-    });
-
-    // Create success message
-    const successMsg = document.createElement('p');
-    successMsg.textContent = "QR Code generated successfully!";
-    successMsg.style.color = "green";
-    successMsg.style.marginTop = "10px";
-    successMsg.style.fontWeight = "bold";
-
-    qrCodeContainer.appendChild(successMsg);
-
-    // Optionally reset form
-    networkNameInput.value = '';
-    passwordInput.value = '';
-}
-
-// Attach event listener
-generateBtn.addEventListener('click', generateQRCode);
+    generateBtn.addEventListener('click', generateQRCode);
+    downloadBtn.addEventListener('click', downloadQRCodeAsJPEG);
+});
