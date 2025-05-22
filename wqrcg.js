@@ -1,4 +1,4 @@
-// script.js
+// script.js / wqrcgs.js
 
 // Elements
 const networkNameInput = document.getElementById('networkName');
@@ -6,40 +6,44 @@ const passwordInput = document.getElementById('password');
 const generateBtn = document.getElementById('generateBtn');
 const qrCodeContainer = document.getElementById('qrcode');
 
-// Function to generate the QR code
 function generateQRCode() {
     const networkName = networkNameInput.value.trim();
     const password = passwordInput.value.trim();
 
-    // Validate inputs
-    if (!networkName || !password) {
-        alert("Please fill in both fields.");
+    if (!networkName) {
+        alert("Please enter the Network Name.");
         return;
     }
 
-    // WiFi format for QR code
-   const wifiQRData = password 
-    ? `WIFI:S:${networkName};T:WPA;P:${password};;`
-    : `WIFI:S:${networkName};;`;
+    // Allow password to be optional
+    const wifiQRData = password 
+        ? `WIFI:S:${networkName};T:WPA;P:${password};;`
+        : `WIFI:S:${networkName};;`;
 
-
-    // Clear any previous QR codes
+    // Clear previous QR code
     qrCodeContainer.innerHTML = '';
 
-    // Generate the new QR code
+    // Generate new QR code
     new QRCode(qrCodeContainer, {
         text: wifiQRData,
-        width: 500,
-        height: 500
+        width: 300,  // smaller and more responsive size
+        height: 300
     });
 
-    // Optionally clear inputs after generation
+    // Provide feedback - better user experience without alert
+    const successMsg = document.createElement('p');
+    successMsg.textContent = "QR Code generated successfully!";
+    successMsg.style.color = "green";
+
+    // Remove previous message if any
+    const oldMsg = qrCodeContainer.querySelector('p');
+    if (oldMsg) oldMsg.remove();
+
+    qrCodeContainer.appendChild(successMsg);
+
+    // Optionally clear inputs
     networkNameInput.value = '';
     passwordInput.value = '';
-
-    // Provide feedback to the user
-    alert("QR Code generated successfully!");
 }
 
-// Event listener for the button
 generateBtn.addEventListener('click', generateQRCode);

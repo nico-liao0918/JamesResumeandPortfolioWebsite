@@ -1,11 +1,40 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="en">
     <head>
+        <meta charset="UTF-8"/>
+        <meta 
+            name="viewport" 
+            content="width=device-width, initial-scale=1.0"
+        />
+        <meta 
+            name="description" 
+            content="Generate WiFi QR codes easily and quickly. Share your WiFi network credentials with friends and guests by creating custom QR codes to connect automatically."
+        />
+        <meta 
+            name="keywords" 
+            content="WiFi QR Code Generator, WiFi QR Code, QR code for WiFi, WiFi sharing, wireless network QR, QR code generator, free WiFi QR"
+        />
+        <script type="application/ld+json">
+            {
+                "@context": "https://schema.org",
+                "@type": "WebApplication",
+                "name": "WiFi QR Code Generator",
+                "url": "https://nico-liao0918.github.io/JamesResumeandPortfolioWebsite/wqrcgindex.html",
+                "description": "Easily generate WiFi QR codes to share your wireless network credentials quickly and securely.",
+                "applicationCategory": "Utility",
+                "author": {
+                    "@type": "Person",
+                    "name": "James"
+                },
+                "operatingSystem": "All",
+                "browserRequirements": "Modern browser with JavaScript enabled"
+            }
+        </script>
         <title>WFQRCG WEBSITE</title>
+        <link rel="icon" href="favicon.ico" type="image/x-icon">
         <link rel="stylesheet" href="genstyle/global.css">
         <link rel="stylesheet" href="styles_wqcg/wqcg.css">
-        <link rel="stylesheet" href="">
     </head>
 
     <body>
@@ -29,7 +58,7 @@
                     <label for="password">
                             Password:
                     </label>
-                    <input type="text" id="password" placeholder="Password" required>
+                    <input type="text" id="password" placeholder="Password">
 
                     <button type="button" id="generateBtn" class="button">
                         Generate QR Code
